@@ -152,7 +152,7 @@ MIT License. Use freely for personal or commercial projects.
 ## 🙌 Developed By
 **Omkumar Solanki**  
 Blockchain & Full Stack Developer  
-[GitHub Profile](https://github.com/yourusername)
+[GitHub Profile](https://github.com/tcoders16)
 
 ---
 
