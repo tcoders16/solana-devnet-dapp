@@ -2,8 +2,21 @@
 
 A professional-grade **Solana Devnet** application enabling essential wallet-based operations like requesting SOL airdrops, displaying wallet balances, and (optionally) signing messages. Built with modern tools like **React**, **Tailwind CSS**, and **Solana Wallet Adapter**, this dApp serves as a learning playground and starter kit for Web3 developers.
 
+
 ---
 
+## 🌐 Visual Demo
+
+### Wallet Connect + Welcome
+![Landing](./public/Screenshot%202025-05-01%20at%2012.03.33%E2%80%AFAM.png)
+
+### Airdrop
+![Airdrop Request](./public/Screenshot%202025-05-01%20at%2012.03.56%E2%80%AFAM.png)
+
+### Learning Code Section
+![Code Demo](./public/Screenshot%202025-05-01%20at%2012.04.24%E2%80%AFAM.png)
+
+---
 ## ✨ Why It Matters in Web3
 
 In Web3, user identity and access control are tied to **wallet ownership** instead of centralized accounts. Verifying wallet ownership is a foundational task for many dApps.
@@ -105,19 +118,6 @@ npm run dev
 ### 4. `LearningSection.jsx`
 - Displays learning outcomes (tutorial style)
 - Annotated code snippets with copy buttons
-
----
-
-## 🌐 Visual Demo
-
-### Wallet Connect + Welcome
-![Landing](./public/Screenshot%202025-05-01%20at%2012.03.33%E2%80%AFAM.png)
-
-### Airdrop
-![Airdrop Request](./public/Screenshot%202025-05-01%20at%2012.03.56%E2%80%AFAM.png)
-
-### Learning Code Section
-![Code Demo](./public/Screenshot%202025-05-01%20at%2012.04.24%E2%80%AFAM.png)
 
 ---
 
