@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import "./App.css"; // Custom styles
+import "./App.css";
 import { RequestAirdrop } from "./components/RequestAirdrop";
 import { ShowSolBalance } from "./components/ShowSolBalance";
 
@@ -37,50 +37,48 @@ function App() {
   return (
     <div className="bg-black text-white font-orbitron min-h-screen flex flex-col">
       {/* Header */}
-      <header className=" py-4 shadow-md border-b border-blue-600">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <header className="w-full py-4 shadow-md border-b border-blue-600">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
           <h1 className="text-2xl tracking-wide text-blue-400 drop-shadow-[0_0_10px_#3b82f6]">
-            🚀 Solana Playground
+            Solana Playground
           </h1>
-          <span className="text-sm font-orbitron text-gray-500"> - Developed By Omkumar Solanki</span>
+          <span className="text-sm font-orbitron text-gray-500 text-center">
+            Developed By Omkumar Solanki
+          </span>
         </div>
       </header>
 
-
-    {/* Page Title */}
-    <div className="text-center mt-12 mb-8">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide  font-orbitron">
-        Solana <span className="text-blue-500">Blockchain</span> Utility Hub
-      </h1>
-      <p className="mt-2 text-blue-400 text-sm md:text-base font-orbitron">
-        A developer playground for wallet-based operations on the Solana Devnet
-      </p>
-    </div>
-
+      {/* Page Title */}
+      <div className="text-center mt-12 mb-8 px-4">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-white tracking-wide font-orbitron">
+          Solana <span className="text-blue-500">Blockchain</span> Utility Hub
+        </h1>
+        <p className="mt-2 text-blue-400 text-sm md:text-base font-orbitron">
+          A developer playground for wallet-based operations on the Solana Devnet
+        </p>
+      </div>
 
       {/* Wallet Connection Provider */}
-      <ConnectionProvider endpoint={endpoint} className="">
+      <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider>
-            <main className="flex-grow px-4 py-10 space-y-20 max-w-5xl mx-auto mt-20">
+            <main className="flex-grow px-4 py-10 space-y-20 w-full max-w-5xl mx-auto">
               {/* Connect Wallet Section */}
               <section className="text-center">
-                <div className="neon-border p-10 rounded-xl shadow-xl">
-                  <h1 className="text-5xl font-bold text-white mb-6 tracking-wide">
+                <div className="neon-border p-8 sm:p-10 rounded-xl shadow-xl">
+                  <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6 tracking-wide">
                     Welcome to <span className="glow-text">dApp</span>
-                  </h1>
-                  <p className="text-gray-400 mb-8 text-lg leading-relaxed">
+                  </h2>
+                  <p className="text-gray-400 mb-8 text-base sm:text-lg leading-relaxed">
                     Connect your wallet to start your journey on the Solana blockchain and explore the decentralized world.
                   </p>
-                  <div className="flex justify-center mb-4">
+                  <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <WalletMultiButton className="glow-button wallet-adapter-button" />
-                  </div>
-                  <div className="flex justify-center">
                     <WalletDisconnectButton className="glow-button wallet-adapter-button" />
                   </div>
-                  <div className="mt-10 text-sm text-gray-500">
+                  <div className="mt-6 text-sm text-gray-500">
                     <p>
-                      Don’t have a wallet?{" "}
+                      Don’t have a wallet?{' '}
                       <a
                         href="https://phantom.app/"
                         target="_blank"
@@ -95,8 +93,8 @@ function App() {
               </section>
 
               {/* Request Airdrop Section */}
-              <section className="">
-                <RequestAirdrop  />
+              <section>
+                <RequestAirdrop />
               </section>
 
               {/* Show Balance Section */}
@@ -109,7 +107,7 @@ function App() {
       </ConnectionProvider>
 
       {/* Footer */}
-      <footer className="text-center py-4 border-t border-blue-600 shadow-inner mt-20">
+      <footer className="text-center py-4 border-t border-blue-600 shadow-inner mt-20 px-4">
         <p className="text-sm text-gray-400">
           Developed By <span className="text-blue-400">Omkumar Solanki</span>
         </p>
