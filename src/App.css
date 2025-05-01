@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Neon Border Glow */
+.neon-border {
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 255, 0.9), 0 0 80px rgba(0, 0, 255, 0.8); /* Deep blue glow */
+  border: 2px solid rgba(0, 0, 255, 0.9); /* Deep blue border */
+  background: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+}
+
+/* Neon Button Glow */
+.neon-button {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.9), 0 0 40px rgba(0, 0, 255, 0.8); /* Deep blue glow for button */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 255, 1), 0 0 60px rgba(0, 0, 255, 1); /* Brighter glow on hover */
+}
+/* Apply Orbitron font globally */
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Or apply Orbitron font to specific elements */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Glow Effect for dApp */
+/* Glow Effect for dApp */
+.glow-text {
+  color: #295afa; /* Light neon blue */
+}
+
+
+/* Button Glow Base */
+.glow-button {
+  background: #1d1d1d;
+  color: #ffffff;
+  border: 2px solid #1e3af8;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(30, 58, 248, 0.75);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.glow-button:hover {
+  background-color: #1e3af8;
+  color: white;
+  box-shadow: 0 0 20px rgba(30, 58, 248, 1), 0 0 30px rgba(30, 58, 248, 0.75);
+  transform: scale(1.05);
+}
+
+/* Wallet Button Override (apply on wallet components) */
+.wallet-adapter-button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-family: inherit;
+}
+
+/* For disconnected state (gray button) */
+.disconnect-button {
+  background-color: #2e2e2e !important;
+  color: #888 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+}
