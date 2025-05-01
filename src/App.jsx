@@ -42,9 +42,21 @@ function App() {
           <h1 className="text-2xl tracking-wide text-blue-400 drop-shadow-[0_0_10px_#3b82f6]">
             🚀 Solana Playground
           </h1>
-          <span className="text-sm font-orbitron text-gray-400"> - Developed By Omkumar Solanki</span>
+          <span className="text-sm font-orbitron text-gray-500"> - Developed By Omkumar Solanki</span>
         </div>
       </header>
+
+
+    {/* Page Title */}
+    <div className="text-center mt-12 mb-8">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide  font-orbitron">
+        Solana <span className="text-blue-500">Blockchain</span> Utility Hub
+      </h1>
+      <p className="mt-2 text-blue-400 text-sm md:text-base font-orbitron">
+        A developer playground for wallet-based operations on the Solana Devnet
+      </p>
+    </div>
+
 
       {/* Wallet Connection Provider */}
       <ConnectionProvider endpoint={endpoint} className="">
